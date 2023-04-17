@@ -6,7 +6,7 @@ This repository provides a [Common Workflow Language (CWL)](https://www.commonwl
 
 To use this tool, you must have the following software installed on your system:
 
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/) OR [Singularity](https://sylabs.io/singularity/)
 - [CWL tool](https://github.com/common-workflow-language/cwltool)
 
 ## Installation
@@ -20,6 +20,11 @@ To install and run the tool, follow these steps:
     ```
     docker build -t scalce-cwl .
     ```
+    OR pull from the built container.
+    ```
+    docker pull ghcr.io/nihasa/scalce-docker-cwl:latest
+    ```
+
 
 4. Run the CWL tool by running the following command from the root of the repository:
 
